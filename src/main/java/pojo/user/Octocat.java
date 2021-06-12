@@ -1,4 +1,4 @@
-package octocat;
+package pojo.user;
 
 import lombok.Data;
 

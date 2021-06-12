@@ -1,11 +1,8 @@
-package apiGithubOctocat;
+package restassured.test.http.methods;
 
-import base.BaseTest;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import octocat.Octocat;
+import restassured.test.base.BaseTest;
+import pojo.user.Octocat;
 import org.junit.jupiter.api.Test;
-
 
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_OK;
@@ -14,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class OctocatGetTests extends BaseTest {
 
     @Test
-    public void readOneUserNambedOctocatGetTest() {
+    public void givenExistingUserWhenGetUserOctocatThenReturnOctocatUserTest() {
 
         Octocat octocat1 = given()
                 .spec(reqSpec)

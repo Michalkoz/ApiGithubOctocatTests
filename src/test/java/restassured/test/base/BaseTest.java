@@ -1,4 +1,4 @@
-package base;
+package restassured.test.base;
 
 import com.github.javafaker.Faker;
 import io.restassured.builder.RequestSpecBuilder;
