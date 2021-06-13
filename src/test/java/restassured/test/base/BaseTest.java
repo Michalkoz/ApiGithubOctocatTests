@@ -12,15 +12,4 @@ public class BaseTest {
     protected static String USERS = "users";
     protected static String OCTOCAT = "octocat";
 
-
-    protected static RequestSpecBuilder reqBuilder;
-    protected static RequestSpecification reqSpec;
-    public static Faker faker;
-
-    @BeforeAll
-    public static void beforeAll() {
-        reqBuilder = new RequestSpecBuilder();
-        reqBuilder.setContentType(ContentType.JSON);
-        reqSpec = reqBuilder.build();
-    }
 }
